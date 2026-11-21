@@ -115,7 +115,7 @@ With a custom delay:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/mehulpatil-dev/AutoApproveBot-telegram.git
 ```
 
 ### 2. Enter the Project Directory
@@ -249,7 +249,7 @@ If you like this project:
 ## 👨‍💻 Developer
 
 <p align="center">
-  <b>Made with ❤️ using Python and Pyrogram</b>
+  <b>Made with ❤️ using Python and Pyrogram by Mehul</b>
 </p>
 
 <p align="center">
