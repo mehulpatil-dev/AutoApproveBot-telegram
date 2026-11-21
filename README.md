@@ -1,5 +1,4 @@
 🤖 Telegram Auto Approve Bot
-
 <p align="center">
 <img src="https://telegra.ph/file/f394c45e5f2f147a37090.jpg" width="180" alt="Bot Logo">
 </p>
@@ -18,7 +17,6 @@ Automate your Telegram group and channel join requests with ease!
 </p>
 
 ✨ About The Project
-
 Telegram Auto Approve Bot is a powerful and feature-rich Telegram bot designed to automatically approve incoming join requests in groups and channels.
 
 Built using Python, Pyrogram, and MongoDB, this project comes with an advanced session management system, mass approval functionality, broadcast features, customizable approval timers, and channel statistics.
@@ -39,6 +37,7 @@ Whether you manage a single Telegram community or multiple channels, this bot he
 🗄️ MongoDB Database – Store users, groups, timers, and channel statistics.
 🔄 Background Tasks – Run broadcasts without blocking other bot handlers.
 🛠️ Technologies Used
+
 Technology	Purpose
 Python	Main programming language
 Pyrogram	Telegram MTProto framework
@@ -48,10 +47,12 @@ AsyncIO	Asynchronous task processing
 Python-Dotenv	Environment configuration
 📋 Bot Commands
 👤 General Commands
+
 Command	Description
 /start	Start the bot
 /help	Display help information
 ⚙️ Admin Commands
+
 Command	Description
 /stats	View bot statistics
 /fbroadcast	Broadcast a replied message
@@ -67,43 +68,40 @@ Command	Description
 /viewsessions	View saved sessions
 /managesessions	Manage active sessions
 /channelshow	View channel statistics
-
 Mass Approval Example:
+
 
 bash
 /massapprove -100xxxxxxxxxx
-
-
 With a custom delay:
+
 
 bash
 /massapprove -100xxxxxxxxxx 2
-
-
 Session Management Example:
+
 
 bash
 /login main
 /viewsessions
 /managesessions
 /logout main
-
 📦 Installation
 1. Clone the Repository
+
 bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-
 2. Enter the Project Directory
+
 bash
 cd YOUR_REPOSITORY
-
 3. Install Requirements
+
 bash
 pip install -r requirements.txt
-
 4. Configure Environment Variables
-
 Create a .env file in the project directory:
+
 
 env
 API_ID=your_api_id
@@ -113,20 +111,17 @@ OWNER_ID=your_telegram_id
 MONGO=your_mongodb_connection_string
 CHANNEL=your_channel_username
 FSUB=False
-
-
 Keep your credentials private. Never upload your .env file or session strings to GitHub.
 
 5. Run The Bot
+
 bash
 python main.py
-
-
 🎉 Congratulations! Your bot should now be running.
 
 🔧 Configuration
-
 The bot requires the following configuration variables:
+
 
 Variable	Description
 API_ID	Telegram API ID
@@ -136,20 +131,16 @@ OWNER_ID	Telegram user ID of the owner
 MONGO	MongoDB connection URI
 CHANNEL	Force-subscription channel username
 FSUB	Enable or disable force subscription
-
 Get your Telegram API credentials from:
 
 https://my.telegram.org
-
 Create a Telegram bot using:
 
 https://t.me/BotFather
-
 Create a MongoDB database using:
 
 https://www.mongodb.com/
 🔑 Required Telegram Permissions
-
 For proper functionality:
 
 Add the bot to your group or channel.
@@ -158,6 +149,7 @@ Give it permission to invite users.
 Enable join requests through your Telegram invite link settings.
 For mass approval, configure an authorized userbot session and grant it the necessary administrator permissions.
 📁 Project Structure
+
 text
 .
 ├── main.py
@@ -171,13 +163,11 @@ text
     ├── database.py
     ├── session_manager.py
     └── strings.py
-
-
 Your actual repository may contain additional files.
 
 🗄️ Database Structure
-
 The bot uses MongoDB to maintain the following collections:
+
 
 Collection	Purpose
 users	Registered Telegram users
@@ -192,7 +182,6 @@ Telegram API flood limits may affect mass approval and broadcast operations.
 Ensure your bot has the required administrator permissions.
 Back up your MongoDB database regularly.
 ❤️ Support & Updates
-
 If you like this project:
 
 ⭐ Give this repository a star.
@@ -200,7 +189,6 @@ If you like this project:
 🐛 Report bugs through GitHub Issues.
 💡 Suggest new features.
 👨‍💻 Developer
-
 <p align="center">
 <b>Made with ❤️ using Python and Pyrogram</b>
 </p>
